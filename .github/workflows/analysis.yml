@@ -48,7 +48,7 @@ jobs:
     # Whether or not to use Psalm’s security analysis
         security_analysis: true # optional
     # File for Psalm’s output
-        report_file: report # optional, default is 
+        report_file: report.json # optional, default is 
     # Whether or not Composer installs dev packages
         composer_require_dev: true # optional
     # Whether or not the --ignore-platform-reqs flag is passed to Composer
