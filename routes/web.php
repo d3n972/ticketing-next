@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function(){
+  return view('welcome');
 });
+
+Route::get('/dashboard', function(){
+  return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+
+Route::middleware(['auth'])->prefix('ticket')->name('ticket.')->group(function(){
+  Route::get('/', [\App\Http\Controllers\TicketController::class, 'index']);
+  Route::get('/{ticket}', [\App\Http\Controllers\TicketController::class, 'show']);
+});
+
+require __DIR__ . '/auth.php';
