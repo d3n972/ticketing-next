@@ -53,4 +53,10 @@ jobs:
         composer_require_dev: true # optional
     # Whether or not the --ignore-platform-reqs flag is passed to Composer
         composer_ignore_platform_reqs: true # optional
-
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        # Artifact name
+        name: psalm.json # optional, default is artifact
+        # A file, directory or wildcard pattern that describes what to upload
+        path: ./psalm.json
