@@ -21,7 +21,8 @@
         "livewire/livewire": "^2.7",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^5.10",
-        "phpunit/phpunit": "^9.5.10"
+        "phpunit/phpunit": "^9.5.10",
+        "vimeo/psalm": "^4.12"
     },
     "autoload": {
         "psr-4": {
