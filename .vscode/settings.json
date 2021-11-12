@@ -1,0 +1,14 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.foldingImportsByDefault": true,
+    "editor.parameterHints.cycle": true,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.restore": false,
+    "window.closeWhenEmpty": true,
+    "editor.rulers": [
+        80,
+        120
+    ]
+}
